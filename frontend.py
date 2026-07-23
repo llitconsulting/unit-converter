@@ -4,7 +4,6 @@ from backend import convert_value, list_quantities, list_units
 
 
 def format_value(value: float, unit_abbrev: str, decimal_places: int = None) -> str:
-
     is_rounded = decimal_places is not None
     rounded = round(value, decimal_places) if is_rounded else value
     formatted = format(rounded, ",")
